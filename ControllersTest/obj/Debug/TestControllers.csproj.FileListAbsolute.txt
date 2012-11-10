@@ -1,0 +1,12 @@
+C:\GroceryApp\ControllersTest\bin\Debug\ControllersTest.dll
+C:\GroceryApp\ControllersTest\bin\Debug\ControllersTest.pdb
+C:\GroceryApp\ControllersTest\bin\Debug\EntityFramework.dll
+C:\GroceryApp\ControllersTest\bin\Debug\GroceryApp.dll
+C:\GroceryApp\ControllersTest\bin\Debug\Telerik.Web.Mvc.dll
+C:\GroceryApp\ControllersTest\bin\Debug\GroceryApp.pdb
+C:\GroceryApp\ControllersTest\bin\Debug\EntityFramework.xml
+C:\GroceryApp\ControllersTest\bin\Debug\GroceryApp_Accessor.dll
+C:\GroceryApp\ControllersTest\bin\Debug\GroceryApp_Accessor.pdb
+C:\GroceryApp\ControllersTest\obj\Debug\ResolveAssemblyReference.cache
+C:\GroceryApp\ControllersTest\obj\Debug\ControllersTest.dll
+C:\GroceryApp\ControllersTest\obj\Debug\ControllersTest.pdb

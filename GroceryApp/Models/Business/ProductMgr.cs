@@ -14,7 +14,7 @@ namespace GroceryApp.Models.Business
      * class which will be a facade to the presentation
      * layer
      * */
-    class ProductMgr :  Manager
+   public  class ProductMgr :  Manager
     {
 
         public void AddProduct(Product product)

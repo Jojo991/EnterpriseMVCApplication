@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d427911f-c554-409f-9424-4904ad6a994f" name="Administrator@IT-41C8711BE33B 2012-11-10 22:13:31" runUser="IT-41C8711BE33B\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e96b331a-14e7-443c-a343-adc2a1a24a0b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_IT-41C8711BE33B 2012-11-10 22_13_31">
+      <DeploymentItem filename="C:\GroceryApp\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\GroceryApp\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\GroceryApp\GroceryApp\bin\GroceryApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-10T22:13:31.1875000+02:00" queuing="2012-11-10T22:13:31.2656250+02:00" start="2012-11-10T22:13:31.3281250+02:00" finish="2012-11-10T22:13:52.1562500+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProductMgrConstructorTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="cf2fbc78-c0f0-b08f-a890-9c157971fc91">
+      <Execution id="a29daa22-5b40-419f-87e7-254b72ef9a6f" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductMgrTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProductMgrConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:2163/">
+        <Host pathToWebApp="C:\GroceryApp\GroceryApp" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cf2fbc78-c0f0-b08f-a890-9c157971fc91" executionId="a29daa22-5b40-419f-87e7-254b72ef9a6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a29daa22-5b40-419f-87e7-254b72ef9a6f" testId="cf2fbc78-c0f0-b08f-a890-9c157971fc91" testName="ProductMgrConstructorTest" computerName="IT-41C8711BE33B" startTime="2012-11-10T22:13:31.3437500+02:00" endTime="2012-11-10T22:13:51.6562500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a29daa22-5b40-419f-87e7-254b72ef9a6f">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:2163/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_ProductMgrConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="IT-41C8711BE33B\WebRequestResponse_ProductMgrConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>
