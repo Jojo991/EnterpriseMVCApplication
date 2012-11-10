@@ -40,7 +40,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL "/>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL " />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -181,10 +181,8 @@
     <Compile Include="Models\Domain\Category.cs" />
     <Compile Include="Models\Domain\Parish.cs" />
     <Compile Include="Models\Domain\Product.cs" />
-    <Compile Include="Models\Domain\ServerSideUtitity.cs" />
     <Compile Include="Models\Domain\Supplier.cs" />
     <Compile Include="Models\Domain\Unit.cs" />
-    <Compile Include="Models\Domain\Visitors.cs" />
     <Compile Include="Models\Services\Exceptions\DBProcessingException.cs" />
     <Compile Include="Models\Services\Exceptions\DuplicateRecordException.cs" />
     <Compile Include="Models\Services\Exceptions\ProductMgrException.cs" />
