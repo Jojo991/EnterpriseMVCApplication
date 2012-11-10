@@ -1,0 +1,20 @@
+﻿@model GroceryApp.Models.Domain.Parish
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Parish</legend>
+
+    <div class="display-label">name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ParishID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

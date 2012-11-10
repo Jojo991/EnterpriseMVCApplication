@@ -1,0 +1,70 @@
+﻿@model IEnumerable<GroceryApp.Models.Domain.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Product Management</h2>
+<strong> Hi user from: @Session["IPAddress"].ToString() , this menu is used for product management.</strong>
+<p>
+    @Html.ActionLink("Create New Product", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            ProductName
+        </th>
+        <th>
+            UnitPrice
+        </th>
+        <th>
+            QuantityReceived
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+            Supplier
+        </th>
+        <th>
+            Unit
+        </th>
+        <th>
+            Description
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantityReceived)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Supplier.SupplierName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unit.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductID })
+        </td>
+    </tr>
+}
+
+</table>

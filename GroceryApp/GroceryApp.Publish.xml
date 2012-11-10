@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\New Folder (4)" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\New Folder (4)" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Views/Product/Index.cshtml" publishTime="11/10/2012 13:53:40" />
     <file relUrl="Content/2011.1.315/Sitefinity/slider-v-both.gif" publishTime="11/09/2012 02:19:28" />
     <file relUrl="Content/2011.1.315/Default/editor.png" publishTime="11/09/2012 02:19:30" />
@@ -29,7 +29,7 @@
     <file relUrl="Views/Product/Create.cshtml" publishTime="11/10/2012 01:23:56" />
     <file relUrl="Content/2011.1.315/Black/slider-vs-left.gif" publishTime="11/09/2012 02:19:30" />
     <file relUrl="Content/2011.1.315/Web20/slider-hs-bottom.gif" publishTime="11/09/2012 02:19:27" />
-    <file relUrl="bin/GroceryApp.pdb" publishTime="11/11/2012 00:25:57" />
+    <file relUrl="bin/GroceryApp.pdb" publishTime="11/11/2012 00:38:17" />
     <file relUrl="Content/2011.1.315/Office2010Black/treeview-nodes-rtl.png" publishTime="11/09/2012 02:19:29" />
     <file relUrl="Content/2011.1.315/telerik.default.min.css" publishTime="11/09/2012 02:19:28" />
     <file relUrl="Content/2011.1.315/telerik.office2010black.min.css" publishTime="11/09/2012 02:19:28" />
@@ -125,7 +125,7 @@
     <file relUrl="Views/Supplier/Details.cshtml" publishTime="11/10/2012 01:07:44" />
     <file relUrl="Content/2011.1.315/Sitefinity/slider-h-bottom.gif" publishTime="11/09/2012 02:19:28" />
     <file relUrl="Content/2011.1.315/Simple/slider-v-right.gif" publishTime="11/09/2012 02:19:28" />
-    <file relUrl="bin/GroceryApp.dll" publishTime="11/11/2012 00:25:57" />
+    <file relUrl="bin/GroceryApp.dll" publishTime="11/11/2012 00:38:17" />
     <file relUrl="Content/2011.1.315/Telerik/slider-h-both.gif" publishTime="11/09/2012 02:19:28" />
     <file relUrl="Content/themes/base/images/ui-icons_cd0a0a_256x240.png" publishTime="11/08/2012 19:46:11" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png" publishTime="11/08/2012 19:46:11" />
@@ -404,7 +404,7 @@
     <file relUrl="Content/2011.1.315/Office2010Black/slider-hs-both.gif" publishTime="11/09/2012 02:19:29" />
     <file relUrl="Content/2011.1.315/Black/editor.png" publishTime="11/09/2012 02:19:30" />
     <file relUrl="Content/2011.1.315/Outlook/slider-v-right.gif" publishTime="11/09/2012 02:19:29" />
-    <file relUrl="Web.config" publishTime="11/11/2012 00:26:10" />
+    <file relUrl="Web.config" publishTime="11/11/2012 00:38:19" />
     <file relUrl="Content/2011.1.315/Simple/slider-h-both.gif" publishTime="11/09/2012 02:19:29" />
     <file relUrl="Content/2011.1.315/Telerik/slider-vs-both.gif" publishTime="11/09/2012 02:19:27" />
     <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="11/08/2012 19:46:12" />
