@@ -90,7 +90,7 @@ namespace TestServices
             try
             {
                 IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-                productSvc.AddProduct(product);//adds product
+               // productSvc.AddProduct(product);//adds product
          
             }
             catch (Exception e)
@@ -116,7 +116,7 @@ namespace TestServices
             try
             {
                 IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-                product = productSvc.SearchProduct("MLR-100");//adds product
+              //  product = productSvc.SearchProduct("MLR-100");//adds product
               
             }
             catch (Exception e)
@@ -154,7 +154,7 @@ namespace TestServices
             try
             {
                 IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-               productSvc.UpdateProduct(product);//adds product
+              // productSvc.UpdateProduct(product);//adds product
 
             }
             catch (Exception e)
