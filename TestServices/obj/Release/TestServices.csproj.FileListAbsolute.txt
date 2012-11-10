@@ -1,0 +1,11 @@
+C:\GroceryApp\TestServices\bin\Release\TestServices.dll.config
+C:\GroceryApp\TestServices\bin\Release\TestServices.dll
+C:\GroceryApp\TestServices\bin\Release\TestServices.pdb
+C:\GroceryApp\TestServices\bin\Release\EntityFramework.dll
+C:\GroceryApp\TestServices\bin\Release\GroceryApp.dll
+C:\GroceryApp\TestServices\bin\Release\Telerik.Web.Mvc.dll
+C:\GroceryApp\TestServices\bin\Release\GroceryApp.pdb
+C:\GroceryApp\TestServices\bin\Release\EntityFramework.xml
+C:\GroceryApp\TestServices\obj\Release\ResolveAssemblyReference.cache
+C:\GroceryApp\TestServices\obj\Release\TestServices.dll
+C:\GroceryApp\TestServices\obj\Release\TestServices.pdb

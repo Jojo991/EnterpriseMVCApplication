@@ -1,0 +1,35 @@
+﻿@model GroceryApp.Models.Domain.Supplier
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Supplier</legend>
+
+     <div class="display-label">SupplierCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupplierCode)
+    </div>
+
+    <div class="display-label">SupplierName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupplierName)
+    </div>
+
+    <div class="display-label">StreetAddress</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StreetAddress)
+    </div>
+
+    <div class="display-label">Parish</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Parish.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SupplierCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

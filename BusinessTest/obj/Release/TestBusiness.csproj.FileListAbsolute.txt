@@ -1,0 +1,11 @@
+C:\GroceryApp\BusinessTest\bin\Release\BusinessTest.dll.config
+C:\GroceryApp\BusinessTest\bin\Release\BusinessTest.dll
+C:\GroceryApp\BusinessTest\bin\Release\BusinessTest.pdb
+C:\GroceryApp\BusinessTest\bin\Release\EntityFramework.dll
+C:\GroceryApp\BusinessTest\bin\Release\GroceryApp.dll
+C:\GroceryApp\BusinessTest\bin\Release\Telerik.Web.Mvc.dll
+C:\GroceryApp\BusinessTest\bin\Release\GroceryApp.pdb
+C:\GroceryApp\BusinessTest\bin\Release\EntityFramework.xml
+C:\GroceryApp\BusinessTest\obj\Release\ResolveAssemblyReference.cache
+C:\GroceryApp\BusinessTest\obj\Release\BusinessTest.dll
+C:\GroceryApp\BusinessTest\obj\Release\BusinessTest.pdb

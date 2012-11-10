@@ -1,0 +1,8 @@
+C:\GroceryApp\GroceryApp\bin\GroceryApp.dll
+C:\GroceryApp\GroceryApp\bin\GroceryApp.pdb
+C:\GroceryApp\GroceryApp\bin\EntityFramework.dll
+C:\GroceryApp\GroceryApp\bin\Telerik.Web.Mvc.dll
+C:\GroceryApp\GroceryApp\bin\EntityFramework.xml
+C:\GroceryApp\GroceryApp\obj\Release\ResolveAssemblyReference.cache
+C:\GroceryApp\GroceryApp\obj\Release\GroceryApp.dll
+C:\GroceryApp\GroceryApp\obj\Release\GroceryApp.pdb
