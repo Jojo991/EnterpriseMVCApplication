@@ -4,5 +4,18 @@
 
 <h2>@ViewBag.Message</h2>
 <p>
-    Hope you will enjoy using this application
+  
+             <strong> Number of Visits : @HttpContext.Current.Application["Visits"] </strong> |
+             <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong>
+
+             <div id="menucontainer">
+
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Manage Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Manage Suppliers", "Index", "Supplier")</li>
+                </ul>
+
+            </div>
 </p>
