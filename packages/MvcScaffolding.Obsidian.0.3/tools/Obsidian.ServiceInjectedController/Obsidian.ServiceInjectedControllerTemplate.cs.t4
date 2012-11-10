@@ -1,0 +1,117 @@
+<#@ template language="C#" HostSpecific="True"  inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="EnvDTE" #>
+using System.Web.Mvc;
+<# if(!string.IsNullOrEmpty(Model.ModelTypeNamespace)) { #>
+using <#= Model.ModelTypeNamespace #>;
+<# } #>
+<# if(!string.IsNullOrEmpty(Model.ServiceInterfaceTypeNamespace)) { #>
+using <#= Model.ServiceInterfaceTypeNamespace #>;
+<# } #>
+
+namespace <#= Model.ControllerNamespace #>
+{   
+<#  
+	var modelType = (CodeType)Model.ModelType;
+	string modelName = modelType.Name;
+	var modelNamePlural = Model.ModelTypePluralized;
+	string modelVariable = modelName.ToLower();
+	var relatedEntities = ((IEnumerable)Model.RelatedEntities).OfType<RelatedEntityInfo>();
+	var primaryKeyProperty = modelType.VisibleMembers().OfType<CodeProperty>().Single(x => x.Name == Model.PrimaryKey);
+	string serviceInterfaceType = "I" + modelType.Name + "Service";
+	string serviceInterfaceClassInstance = "_" + modelVariable + "Service";
+	string serviceInterfaceConstructorParam = modelVariable + "Service";
+#>
+	public class <#= Model.ControllerName #> : Controller
+	{
+
+		private readonly <#= serviceInterfaceType #> <#= serviceInterfaceClassInstance #>;
+
+		public <#= Model.ControllerName #>(<#= String.Join(" ", serviceInterfaceType, serviceInterfaceConstructorParam) #>)
+		{
+			<#= serviceInterfaceClassInstance #> = <#= serviceInterfaceConstructorParam #>;
+		}
+
+		//
+		// GET: /<#= modelName #>/
+		public ViewResult Index()
+		{
+			return View(<#= serviceInterfaceClassInstance #>.LoadAll());
+		}
+
+		//
+		// GET: /<#= modelName #>/Details/5
+		public ViewResult Details(<#= primaryKeyProperty.Type.AsString #> id)
+		{
+			return View(<#= serviceInterfaceClassInstance #>.LoadById(id));
+		}
+
+		//
+		// GET: /<#= modelName #>/Create
+		public ActionResult Create()
+		{
+<# foreach(var relatedEntity in relatedEntities.Where(x => x.RelationType == RelationType.Parent)) { #>
+			ViewBag.Possible<#= relatedEntity.RelationNamePlural #> = <#= serviceInterfaceClassInstance #>.<#= relatedEntity.RelatedEntityTypeNamePlural #>;
+<# } #>
+			return View();
+		} 
+
+		//
+		// POST: /<#= modelName #>/Create
+		[HttpPost]
+		public ActionResult Create(<#= modelName #> <#= modelVariable #>)
+		{
+			if (ModelState.IsValid) {
+				<#= serviceInterfaceClassInstance #>.Save(<#= modelVariable #>);
+				return RedirectToAction("Index");
+			} 
+			return View();
+		}
+
+		//
+		// GET: /<#= modelName #>/Edit/5
+		public ActionResult Edit(<#= primaryKeyProperty.Type.AsString #> id)
+		{
+<# foreach(var relatedEntity in relatedEntities.Where(x => x.RelationType == RelationType.Parent)) { #>
+			ViewBag.Possible<#= relatedEntity.RelationNamePlural #> = <#= serviceInterfaceClassInstance #>.<#= relatedEntity.RelatedEntityTypeNamePlural #>;
+<# } #>
+			 return View(<#= serviceInterfaceClassInstance #>.LoadById(id));
+		}
+
+		//
+		// POST: /<#= modelName #>/Edit/5
+		[HttpPost]
+		public ActionResult Edit(<#= modelName #> <#= modelVariable #>)
+		{
+			if (ModelState.IsValid) {
+				<#= serviceInterfaceClassInstance #>.Save(<#= modelVariable #>);
+				return RedirectToAction("Index");
+			} 
+			else {
+<# foreach(var relatedEntity in relatedEntities.Where(x => x.RelationType == RelationType.Parent)) { #>
+				ViewBag.Possible<#= relatedEntity.RelationNamePlural #> = <#= serviceInterfaceClassInstance #>.<#= relatedEntity.RelatedEntityTypeNamePlural #>;
+<# } #>
+				return View();
+			}
+		}
+
+		//
+		// GET: /<#= modelName #>/Delete/5
+		public ActionResult Delete(<#= primaryKeyProperty.Type.AsString #> id)
+		{
+			return View(<#= serviceInterfaceClassInstance #>.LoadById(id));
+		}
+
+		//
+		// POST: /<#= modelName #>/Delete/5
+		[HttpPost, ActionName("Delete")]
+		public ActionResult DeleteConfirmed(<#= primaryKeyProperty.Type.AsString #> id)
+		{
+			<#= serviceInterfaceClassInstance #>.Delete(id);
+			return RedirectToAction("Index");
+		}
+	}
+}

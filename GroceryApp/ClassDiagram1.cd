@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GroceryApp.Models.Domain.Unit">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAQ=</HashCode>
+      <FileName>Models\Domain\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroceryApp.Models.Domain.Supplier">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAAEFQ=</HashCode>
+      <FileName>Models\Domain\Supplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroceryApp.Models.Domain.Product">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAACAAAgAIAAIAAAAAAABAAAAAAAAAAEAAAICEA=</HashCode>
+      <FileName>Models\Domain\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroceryApp.Models.Domain.Parish">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Models\Domain\Parish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroceryApp.Models.Domain.Category">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Domain\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,63 @@
+<#@ template language="C#" HostSpecific="True"  inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="EnvDTE" #>
+using System;
+using System.Collections.Generic;
+<# if(!string.IsNullOrEmpty(Model.ModelTypeNamespace)) { #>
+using <#= Model.ModelTypeNamespace #>;
+<# } #>
+<# if(!string.IsNullOrEmpty(Model.ServiceInterfaceNamespace)) { #>
+using <#= Model.ServiceInterfaceNamespace #>;
+<# } #>
+
+namespace <#= Model.ServiceTypeNamespace #>
+{   
+<#  
+	var modelType = (CodeType)Model.ModelType;
+	string modelName = modelType.Name;
+#>
+	public class <#= Model.ServiceName #> : <#= Model.ServiceInterfaceName #>
+	{
+
+		private readonly IRepository<<#= modelName #>> _repo;
+        private readonly IUnitOfWork _unitOfWork;
+
+		public <#= Model.ServiceName #>(IRepository<<#= modelName #>> repo, IUnitOfWork unitOfWork)
+        {
+            _repo = repo;
+            _unitOfWork = unitOfWork;
+        }
+
+		public IEnumerable<<#= modelName #>> LoadAll()
+        {
+            return _repo.GetAll();
+        }
+
+        public <#= modelName #> LoadById(int id)
+        {
+            return _repo.First(e => e.Id == id);
+        }
+
+        public void Save(<#= modelName #> emp)
+        {
+            if(emp == null)
+                throw new ArgumentNullException("emp");
+
+            if (emp.Id == 0)
+                _repo.Insert(emp);
+            else
+                _repo.Update(emp);
+
+            _unitOfWork.Commit();
+        }
+
+        public void Delete(int id)
+        {
+            _repo.Delete(_repo.First(e => e.Id == id));
+            _unitOfWork.Commit();
+        }
+	}
+}

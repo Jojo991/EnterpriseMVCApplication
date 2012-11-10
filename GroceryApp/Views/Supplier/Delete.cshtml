@@ -1,0 +1,33 @@
+﻿@model GroceryApp.Models.Domain.Supplier
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Supplier</legend>
+
+    <div class="display-label">SupplierName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupplierName)
+    </div>
+
+    <div class="display-label">StreetAddress</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StreetAddress)
+    </div>
+
+    <div class="display-label">Parish</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Parish.name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

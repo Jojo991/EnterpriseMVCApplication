@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ModelScaffolding</id>
+    <version>0.9.2</version>
+    <title>ModelScaffolding</title>
+    <authors>Oleg Aksenov</authors>
+    <owners>Oleg Aksenov</owners>
+    <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
+    <projectUrl>http://modelscaffolding.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fast and customizable way to add Model (with optional Controller and Views) to your ASP.NET MVC project. You can specify property types or can use conventions. Visit the Project site to learn about output and conventions' customization. Inspired by MVCScaffolding.</description>
+    <summary>A fast and customizable way to add Model (with optional Controller and Views) to your ASP.NET MVC project.</summary>
+    <tags>Model MVC Scaffolding Scaffold Scaffolder</tags>
+    <dependencies>
+      <dependency id="T4Scaffolding" version="1.0.0" />
+      <dependency id="MVCScaffolding" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>

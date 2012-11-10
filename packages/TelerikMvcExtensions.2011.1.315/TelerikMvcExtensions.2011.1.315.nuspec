@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TelerikMvcExtensions</id>
+    <version>2011.1.315</version>
+    <title>TelerikMvcExtensions</title>
+    <authors>Telerik</authors>
+    <owners>Telerik</owners>
+    <projectUrl>http://www.telerik.com/products/aspnet-mvc.aspx</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/TelerikMvcExtensions.2011.1.315.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Teleik Extensions for ASP.NET MVC is a set of UI components for ASP.NET MVC</description>
+    <summary>Teleik Extensions for ASP.NET MVC is a set of UI components for ASP.NET MVC</summary>
+    <tags>ASP.NET mvc ui html extensions</tags>
+  </metadata>
+</package>

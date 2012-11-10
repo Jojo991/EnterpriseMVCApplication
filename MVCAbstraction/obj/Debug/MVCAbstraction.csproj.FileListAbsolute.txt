@@ -1,0 +1,8 @@
+C:\GroceryApp\MVCAbstraction\bin\Debug\MVCAbstraction.dll.config
+C:\GroceryApp\MVCAbstraction\bin\Debug\MVCAbstraction.dll
+C:\GroceryApp\MVCAbstraction\bin\Debug\MVCAbstraction.pdb
+C:\GroceryApp\MVCAbstraction\bin\Debug\log4net.dll
+C:\GroceryApp\MVCAbstraction\bin\Debug\log4net.xml
+C:\GroceryApp\MVCAbstraction\obj\Debug\ResolveAssemblyReference.cache
+C:\GroceryApp\MVCAbstraction\obj\Debug\MVCAbstraction.dll
+C:\GroceryApp\MVCAbstraction\obj\Debug\MVCAbstraction.pdb

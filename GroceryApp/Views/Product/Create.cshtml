@@ -1,0 +1,89 @@
+﻿@model GroceryApp.Models.Domain.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Product</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProductID)
+            @Html.ValidationMessageFor(model => model.ProductID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProductName)
+            @Html.ValidationMessageFor(model => model.ProductName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UnitPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UnitPrice)
+            @Html.ValidationMessageFor(model => model.UnitPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.QuantityReceived)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.QuantityReceived)
+            @Html.ValidationMessageFor(model => model.QuantityReceived)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CategoryID, "Category")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CategoryID", String.Empty)
+            @Html.ValidationMessageFor(model => model.CategoryID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SupplierCode, "Supplier")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("SupplierCode", String.Empty)
+            @Html.ValidationMessageFor(model => model.SupplierCode)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UnitID, "Unit")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UnitID", String.Empty)
+            @Html.ValidationMessageFor(model => model.UnitID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

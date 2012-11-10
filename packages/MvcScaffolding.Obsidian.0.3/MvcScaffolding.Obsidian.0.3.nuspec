@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MvcScaffolding.Obsidian</id>
+    <version>0.3</version>
+    <title>MvcScaffolding.Obsidian</title>
+    <authors>Fabrice Michellonet</authors>
+    <owners>Fabrice Michellonet</owners>
+    <iconUrl>http://fabrice.michellonet.free.fr/Obsidian/Obsidian_white.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides additional MVC3 scaffolders.
+(Service, Service interface, Service injected controller, Ajax Grid).
+More to come soon.</description>
+    <summary>Provides additional MVC3 scaffolders.</summary>
+    <copyright>Fabrice Michellonet &amp; Devolis 2011</copyright>
+    <tags>MVC Scaffolding Scaffold Scaffolder</tags>
+    <dependencies>
+      <dependency id="MvcScaffolding" version="0.9.9" />
+      <dependency id="TelerikMvcExtensions" version="2011.1.315" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,25 @@
+<#@ template language="C#" HostSpecific="True"  inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="EnvDTE" #>
+using System.Collections.Generic;
+<# if(!string.IsNullOrEmpty(Model.ModelTypeNamespace)) { #>
+using <#= Model.ModelTypeNamespace #>;
+<# } #>
+
+namespace <#= Model.ServiceInterfaceTypeNamespace #>
+{   
+<#  
+	var modelType = (CodeType)Model.ModelType;
+	string modelName = modelType.Name;
+#>
+	public interface <#= Model.ServiceInterfaceName #> 
+	{
+		IEnumerable<<#= modelName #>> LoadAll();
+		<#= modelName #> LoadById(int id);
+		void Save(<#= modelName #> emp);
+		void Delete(int id);
+	}
+}
