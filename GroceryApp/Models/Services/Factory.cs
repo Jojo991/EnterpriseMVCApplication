@@ -5,8 +5,6 @@ using System.Text;
 using System.Configuration;
 using System.Collections.Specialized;
 using System.Reflection;
-using log4net;
-using log4net.Config;
 using GroceryApp.Models.Services.Exceptions;
 
 
@@ -35,7 +33,7 @@ namespace GroceryApp.Models.Services
         {
 
             //logger Configuration here----------------
-            log4net.Config.XmlConfigurator.Configure();
+           // log4net.Config.XmlConfigurator.Configure();
             //------------------------------------------
 
             Type type;

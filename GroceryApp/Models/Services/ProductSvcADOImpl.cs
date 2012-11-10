@@ -5,8 +5,6 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.ComponentModel;
-using log4net;
-using log4net.Config;
 using GroceryApp.Models.Domain;
 using System.Data;
 
