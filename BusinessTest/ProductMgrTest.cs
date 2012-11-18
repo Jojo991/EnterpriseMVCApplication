@@ -90,7 +90,7 @@ namespace BusinessTest
             //-------------
             try
             {
-               target.AddProduct(product);
+              // target.AddProduct(product);
             }
             catch (ProductMgrException e)
             {             
@@ -110,7 +110,7 @@ namespace BusinessTest
             try
             {
 
-               product = target.SearchProduct("CB-100");      
+              // product = target.SearchProduct("CB-100");      
 
 
             }
@@ -140,7 +140,7 @@ namespace BusinessTest
             //-------------
             try
             {
-             target.UpdateProduct(product);           
+           //  target.UpdateProduct(product);           
 
             }
             catch (ProductMgrException e)
@@ -161,7 +161,7 @@ namespace BusinessTest
             try
             {
 
-               target.RemoveProduct("CB-100");
+              // target.RemoveProduct("CB-100");
 
 
             }
