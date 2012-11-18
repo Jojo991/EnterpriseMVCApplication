@@ -178,6 +178,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Business\Manager.cs" />
     <Compile Include="Models\Business\ProductMgr.cs" />
+    <Compile Include="Models\Business\SupplierMgr.cs" />
     <Compile Include="Models\Domain\Category.cs" />
     <Compile Include="Models\Domain\Parish.cs" />
     <Compile Include="Models\Domain\Product.cs" />
@@ -187,11 +188,14 @@
     <Compile Include="Models\Services\Exceptions\DuplicateRecordException.cs" />
     <Compile Include="Models\Services\Exceptions\ProductMgrException.cs" />
     <Compile Include="Models\Services\Exceptions\ServiceLoadException.cs" />
+    <Compile Include="Models\Services\Exceptions\SupplierMgrException.cs" />
     <Compile Include="Models\Services\Factory.cs" />
     <Compile Include="Models\Services\GroceryDbContext.cs" />
     <Compile Include="Models\Services\IProductSvc.cs" />
     <Compile Include="Models\Services\IService.cs" />
+    <Compile Include="Models\Services\ISupplierSvc.cs" />
     <Compile Include="Models\Services\ProductSvcADOImpl.cs" />
+    <Compile Include="Models\Services\SupplierSvcADOImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -537,7 +541,9 @@
     <Content Include="Scripts\2011.1.315\telerik.upload.min.js" />
     <Content Include="Scripts\2011.1.315\telerik.window.min.js" />
     <Content Include="Views\Index\Team.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -797,9 +803,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\Delete.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

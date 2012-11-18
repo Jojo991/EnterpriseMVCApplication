@@ -23,5 +23,8 @@ namespace GroceryApp.Models.Services
 
         //update product
         void UpdateProduct(Product product);
+
+        //update product
+        void RemoveProduct(string productCode);
     }
 }

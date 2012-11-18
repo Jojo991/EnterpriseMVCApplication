@@ -3,19 +3,27 @@
 }
 
 <h2>@ViewBag.Message</h2>
-<p>
-  
+
+<div id="title">
+                <h1>Sharon's Grocery Store</h1>
              <strong> Number of Visits : @HttpContext.Current.Application["Visits"] </strong> |
              <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong>
+                
+            </div>
 
-             <div id="menucontainer">
+ <div id="menucontainer">
 
                 <ul id="menu">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Manage Products", "Index", "Product")</li>
-                    <li>@Html.ActionLink("Manage Suppliers", "Index", "Supplier")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Suppliers", "Index", "Supplier")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Category")</li>
+                    <li>@Html.ActionLink("Parishes", "Index", "Parish")</li>
                 </ul>
 
             </div>
+<p>
+               
+             
 </p>

@@ -85,12 +85,12 @@ namespace BusinessTest
             product.UnitPrice = 30;
             product.CategoryID = 1;
             product.Description = "Canned Beef";
-            product.SupplierCode = "MT-100 ";
+            product.SupplierCode = "MT-100";
            
             //-------------
             try
             {
-               // target.AddProduct(product);
+               target.AddProduct(product);
             }
             catch (ProductMgrException e)
             {             
@@ -110,7 +110,7 @@ namespace BusinessTest
             try
             {
 
-              // product = target.SearchProduct("CB-100");      
+               product = target.SearchProduct("CB-100");      
 
 
             }
@@ -132,7 +132,7 @@ namespace BusinessTest
             Product product = new Product();
             product.ProductID = "CB-100";
             product.ProductName = "CB Chicken";
-            product.UnitID = 2;
+            product.UnitID = 1;
             product.QuantityReceived = 12;
             product.UnitPrice = 30;
             product.CategoryID = 1;
@@ -140,7 +140,7 @@ namespace BusinessTest
             //-------------
             try
             {
-             // target.UpdateProduct(product);           
+             target.UpdateProduct(product);           
 
             }
             catch (ProductMgrException e)
@@ -148,5 +148,28 @@ namespace BusinessTest
                 Assert.Fail(e.ToString());//force fail of test
             }
         }
+
+        /// <summary>
+        ///A test for SearchProduct
+        ///</summary>
+        [TestMethod()]
+        public void RemoveProductTest()
+        {
+           // Product product = new Product();
+
+            ProductMgr target = new ProductMgr(); // TODO: Initialize to an appropriate value
+            try
+            {
+
+               target.RemoveProduct("CB-100");
+
+
+            }
+            catch (ProductMgrException e)
+            {
+                Assert.Fail(e.ToString());//force fail of test
+            }
+        }
+
     }
 }

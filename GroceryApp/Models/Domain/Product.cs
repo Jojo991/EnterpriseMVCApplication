@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GroceryApp.Models.Domain
 {
+    /**Domain object that represents a product**/
     public class Product
     {
         [Key]

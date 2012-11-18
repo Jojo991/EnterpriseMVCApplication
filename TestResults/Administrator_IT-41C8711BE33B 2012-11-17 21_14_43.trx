@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="895ad777-fdbd-42e7-b7ae-731e0ca0ea35" name="Administrator@IT-41C8711BE33B 2012-11-17 21:14:43" runUser="IT-41C8711BE33B\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e96b331a-14e7-443c-a343-adc2a1a24a0b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\GroceryApp\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Administrator_IT-41C8711BE33B 2012-11-17 21_14_43">
+      <DeploymentItem filename="C:\GroceryApp\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\GroceryApp\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\GroceryApp\GroceryApp\bin\GroceryApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-17T21:14:43.8897500+02:00" queuing="2012-11-17T21:14:43.9366250+02:00" start="2012-11-17T21:14:44.1397500+02:00" finish="2012-11-17T21:14:54.6710000+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="16" executed="9" error="0" failed="9" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SearchSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="bf017ad6-4f60-c2c3-891a-71955203f803">
+      <Execution id="7715ce47-84ec-4036-bb39-9d925577be99" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchSupplierTest" />
+    </UnitTest>
+    <UnitTest name="SearchProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01">
+      <Execution id="ac36b0a5-f3c8-46d0-9a7c-0c31ee0686f5" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchProductTest" />
+    </UnitTest>
+    <UnitTest name="AddProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa">
+      <Execution id="fc61e3a8-68a9-4b41-9d83-4edd3655c989" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddProductTest" />
+    </UnitTest>
+    <OrderedTest name="BusinessTestSuite" storage="c:\groceryapp\businesstest\businesstestsuite.orderedtest" id="8f19a129-8be8-4c1e-bc73-167c517fc37e">
+      <Execution id="fe0d1136-95d0-4b59-94cf-5e707525732e" />
+      <TestLinks>
+        <TestLink id="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" name="AddSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="bf017ad6-4f60-c2c3-891a-71955203f803" name="SearchSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="c190ac50-fd1e-c1ad-24e1-3c13826758a2" name="UpdateSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="a4cff782-8c19-6d5d-f4c8-d1ae28419562" name="RemoveSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" name="AddProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" name="SearchProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="6143045e-d7b1-c3cf-6431-871ca4cbe173" name="UpdateProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" name="RemoveProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="AddSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c">
+      <Execution id="d0b87bc5-5bcd-40a0-9584-e59892bb2d8d" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddSupplierTest" />
+    </UnitTest>
+    <UnitTest name="UpdateSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="c190ac50-fd1e-c1ad-24e1-3c13826758a2">
+      <Execution id="208bb447-4ce4-4e9e-bc39-3bce5d1ef058" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateSupplierTest" />
+    </UnitTest>
+    <UnitTest name="RemoveSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="a4cff782-8c19-6d5d-f4c8-d1ae28419562">
+      <Execution id="63d2f9c1-21ac-4d1a-8fbd-25c4dae06bdf" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveSupplierTest" />
+    </UnitTest>
+    <UnitTest name="AddProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef">
+      <Execution id="c96dafea-5fd1-418a-ba59-624d978810a1" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddProductTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="6143045e-d7b1-c3cf-6431-871ca4cbe173">
+      <Execution id="8361f46c-f33f-43a2-9741-02d6fce55c62" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateProductTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="99ca40cb-11c4-6932-0028-af3aa6b398f0">
+      <Execution id="5a653d94-47ea-4fba-93c0-2ff15ae84aad" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateProductTest" />
+    </UnitTest>
+    <UnitTest name="RemoveProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="11468ab7-0a0d-5f63-ec65-4bfd24d50c15">
+      <Execution id="ff13fdfa-5990-4b8b-8ef6-421d6239bed1" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveProductTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" executionId="208bb447-4ce4-4e9e-bc39-3bce5d1ef058" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99ca40cb-11c4-6932-0028-af3aa6b398f0" executionId="5a653d94-47ea-4fba-93c0-2ff15ae84aad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f19a129-8be8-4c1e-bc73-167c517fc37e" executionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" executionId="2976b035-b566-412a-8034-5aaa21d86f34" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="bf017ad6-4f60-c2c3-891a-71955203f803" executionId="1a9fc2cc-bd30-42d4-9ec3-8747e76c5b24" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" executionId="9032f3e4-cc37-47ad-9af6-d10525c80d21" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" executionId="779e7c06-3048-458d-be7b-03574719a4e1" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" executionId="a51705d1-45d6-4b21-b5db-b845df6aafc7" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" executionId="816357fc-c753-4f7f-a5ad-a8ab818d139c" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" executionId="f3d77661-4006-4f7a-8a1c-3b698b0d1209" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" executionId="f3431a45-d27b-4793-9d9a-0212b68b7c3c" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+    <TestEntry testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" executionId="8361f46c-f33f-43a2-9741-02d6fce55c62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef" executionId="c96dafea-5fd1-418a-ba59-624d978810a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" executionId="d0b87bc5-5bcd-40a0-9584-e59892bb2d8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" executionId="63d2f9c1-21ac-4d1a-8fbd-25c4dae06bdf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf017ad6-4f60-c2c3-891a-71955203f803" executionId="7715ce47-84ec-4036-bb39-9d925577be99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="208bb447-4ce4-4e9e-bc39-3bce5d1ef058" testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" testName="UpdateSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.1060777" startTime="2012-11-17T21:14:44.4522500+02:00" endTime="2012-11-17T21:14:45.4522500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="208bb447-4ce4-4e9e-bc39-3bce5d1ef058">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.AddSupplier(Supplier supplier) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 23
+   at BusinessTest.SupplierMgrTest.UpdateSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 146</Message>
+          <StackTrace>   at BusinessTest.SupplierMgrTest.UpdateSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 150
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a653d94-47ea-4fba-93c0-2ff15ae84aad" testId="99ca40cb-11c4-6932-0028-af3aa6b398f0" testName="UpdateProductTest" computerName="IT-41C8711BE33B" duration="00:00:04.2940851" startTime="2012-11-17T21:14:45.4991250+02:00" endTime="2012-11-17T21:14:50.4210000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a653d94-47ea-4fba-93c0-2ff15ae84aad">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---&gt; System.Data.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at GroceryApp.Models.Services.ProductSvcADOImpl.UpdateProduct(Product product) in C:\GroceryApp\GroceryApp\Models\Services\ProductSvcADOImpl.cs:line 54
+   at TestServices.ProductSvcADOImplTest.UpdateProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 157</Message>
+          <StackTrace>   at TestServices.ProductSvcADOImplTest.UpdateProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 162
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <TestResultAggregation executionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="8f19a129-8be8-4c1e-bc73-167c517fc37e" testName="BusinessTestSuite" computerName="IT-41C8711BE33B" duration="00:00:00.0884746" startTime="2012-11-17T21:14:50.4366250+02:00" endTime="2012-11-17T21:14:50.5303750+02:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe0d1136-95d0-4b59-94cf-5e707525732e">
+      <Counters error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="2976b035-b566-412a-8034-5aaa21d86f34" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" testName="AddSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.0048218" startTime="2012-11-17T21:14:50.4522500+02:00" endTime="2012-11-17T21:14:50.5303750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2976b035-b566-412a-8034-5aaa21d86f34">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.AddSupplier(Supplier supplier) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 23
+   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 85</Message>
+              <StackTrace>   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 89
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <TestResult executionId="1a9fc2cc-bd30-42d4-9ec3-8747e76c5b24" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="bf017ad6-4f60-c2c3-891a-71955203f803" testName="SearchSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a9fc2cc-bd30-42d4-9ec3-8747e76c5b24" />
+        <TestResult executionId="9032f3e4-cc37-47ad-9af6-d10525c80d21" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" testName="UpdateSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9032f3e4-cc37-47ad-9af6-d10525c80d21" />
+        <TestResult executionId="779e7c06-3048-458d-be7b-03574719a4e1" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" testName="RemoveSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="779e7c06-3048-458d-be7b-03574719a4e1" />
+        <TestResult executionId="a51705d1-45d6-4b21-b5db-b845df6aafc7" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" testName="AddProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a51705d1-45d6-4b21-b5db-b845df6aafc7" />
+        <TestResult executionId="816357fc-c753-4f7f-a5ad-a8ab818d139c" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" testName="SearchProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="816357fc-c753-4f7f-a5ad-a8ab818d139c" />
+        <TestResult executionId="f3d77661-4006-4f7a-8a1c-3b698b0d1209" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" testName="UpdateProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3d77661-4006-4f7a-8a1c-3b698b0d1209" />
+        <TestResult executionId="f3431a45-d27b-4793-9d9a-0212b68b7c3c" parentExecutionId="fe0d1136-95d0-4b59-94cf-5e707525732e" testId="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" testName="RemoveProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3431a45-d27b-4793-9d9a-0212b68b7c3c" />
+      </InnerResults>
+    </TestResultAggregation>
+    <UnitTestResult executionId="8361f46c-f33f-43a2-9741-02d6fce55c62" testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" testName="UpdateProductTest" computerName="IT-41C8711BE33B" duration="00:00:03.5280687" startTime="2012-11-17T21:14:50.5928750+02:00" endTime="2012-11-17T21:14:54.1710000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8361f46c-f33f-43a2-9741-02d6fce55c62">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method BusinessTest.ProductMgrTest.UpdateProductTest threw exception: 
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlClient.SqlException: The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_dbo.Products_dbo.Units_UnitID". The conflict occurred in database "GroceryApp.Models.Services.GroceryDbContext", table "dbo.Units", column 'UnitID'.
+The statement has been terminated.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+ --- End of inner exception stack trace ---
+    at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+ --- End of inner exception stack trace ---
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at GroceryApp.Models.Services.ProductSvcADOImpl.UpdateProduct(Product product) in C:\GroceryApp\GroceryApp\Models\Services\ProductSvcADOImpl.cs:line 54
+   at GroceryApp.Models.Business.ProductMgr.UpdateProduct(Product product) in C:\GroceryApp\GroceryApp\Models\Business\ProductMgr.cs:line 75
+   at BusinessTest.ProductMgrTest.UpdateProductTest() in C:\GroceryApp\BusinessTest\ProductMgrTest.cs:line 143
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c96dafea-5fd1-418a-ba59-624d978810a1" testId="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef" testName="AddProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.0323454" startTime="2012-11-17T21:14:54.2022500+02:00" endTime="2012-11-17T21:14:54.2491250+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c96dafea-5fd1-418a-ba59-624d978810a1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Products_dbo.Suppliers_SupplierCode". The conflict occurred in database "GroceryApp.Models.Services.GroceryDbContext", table "dbo.Suppliers", column 'SupplierCode'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at GroceryApp.Models.Services.ProductSvcADOImpl.AddProduct(Product product) in C:\GroceryApp\GroceryApp\Models\Services\ProductSvcADOImpl.cs:line 34
+   at TestServices.ProductSvcADOImplTest.AddProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 93</Message>
+          <StackTrace>   at TestServices.ProductSvcADOImplTest.AddProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d0b87bc5-5bcd-40a0-9584-e59892bb2d8d" testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" testName="AddSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.0076925" startTime="2012-11-17T21:14:54.3116250+02:00" endTime="2012-11-17T21:14:54.3272500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0b87bc5-5bcd-40a0-9584-e59892bb2d8d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.AddSupplier(Supplier supplier) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 23
+   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 85</Message>
+          <StackTrace>   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="63d2f9c1-21ac-4d1a-8fbd-25c4dae06bdf" testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" testName="RemoveSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.0091321" startTime="2012-11-17T21:14:54.3428750+02:00" endTime="2012-11-17T21:14:54.3585000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63d2f9c1-21ac-4d1a-8fbd-25c4dae06bdf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.RemoveSupplier(String supplierCode) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 93
+   at BusinessTest.SupplierMgrTest.RemoveSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 104</Message>
+          <StackTrace>   at BusinessTest.SupplierMgrTest.RemoveSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7715ce47-84ec-4036-bb39-9d925577be99" testId="bf017ad6-4f60-c2c3-891a-71955203f803" testName="SearchSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.0094148" startTime="2012-11-17T21:14:54.3741250+02:00" endTime="2012-11-17T21:14:54.4053750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7715ce47-84ec-4036-bb39-9d925577be99">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.SearchSupplier(String supplierCode) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 48
+   at BusinessTest.SupplierMgrTest.SearchSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 123</Message>
+          <StackTrace>   at BusinessTest.SupplierMgrTest.SearchSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

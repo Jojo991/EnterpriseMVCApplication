@@ -11,7 +11,7 @@ namespace GroceryApp.Models.Services.Exceptions
     * Thrown when the application fails to
      * load a service
     * */
-    class ServiceLoadException : Exception
+   public  class ServiceLoadException : Exception
     {
         public ServiceLoadException(String s)
             : base(s)

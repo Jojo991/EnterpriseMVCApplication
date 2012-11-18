@@ -7,12 +7,14 @@ using System.Web;
 using System.Web.Mvc;
 using GroceryApp.Models.Domain;
 using GroceryApp.Models.Services;
+using GroceryApp.Models.Business;
 
 namespace GroceryApp.Controllers
 { 
     public class SupplierController : Controller
     {
         private GroceryDbContext db = new GroceryDbContext();
+        private SupplierMgr SuppMgr = new SupplierMgr();
 
         //
         // GET: /Supplier/
@@ -28,7 +30,8 @@ namespace GroceryApp.Controllers
 
         public ViewResult Details(string id)
         {
-            Supplier supplier = db.Suppliers.Find(id);
+            Supplier supplier = SuppMgr.SearchSupplier(id);
+           // Supplier supplier = db.Suppliers.Find(id);
             return View(supplier);
         }
 
@@ -49,8 +52,9 @@ namespace GroceryApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Suppliers.Add(supplier);
-                db.SaveChanges();
+                //db.Suppliers.Add(supplier);
+                //db.SaveChanges();
+                SuppMgr.AddSupplier(supplier);
                 return RedirectToAction("Index");  
             }
 
@@ -63,7 +67,8 @@ namespace GroceryApp.Controllers
  
         public ActionResult Edit(string id)
         {
-            Supplier supplier = db.Suppliers.Find(id);
+           // Supplier supplier = db.Suppliers.Find(id);
+            Supplier supplier = SuppMgr.SearchSupplier(id);
             ViewBag.ParishID = new SelectList(db.Parish, "ParishID", "name", supplier.ParishID);
             return View(supplier);
         }
@@ -76,8 +81,9 @@ namespace GroceryApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(supplier).State = EntityState.Modified;
-                db.SaveChanges();
+                //db.Entry(supplier).State = EntityState.Modified;
+               // db.SaveChanges();
+                SuppMgr.UpdateSupplier(supplier);
                 return RedirectToAction("Index");
             }
             ViewBag.ParishID = new SelectList(db.Parish, "ParishID", "name", supplier.ParishID);
@@ -99,9 +105,10 @@ namespace GroceryApp.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(string id)
         {            
-            Supplier supplier = db.Suppliers.Find(id);
-            db.Suppliers.Remove(supplier);
-            db.SaveChanges();
+            //Supplier supplier = db.Suppliers.Find(id);
+            //db.Suppliers.Remove(supplier);
+          //  db.SaveChanges();
+            SuppMgr.RemoveSupplier(id);
             return RedirectToAction("Index");
         }
 

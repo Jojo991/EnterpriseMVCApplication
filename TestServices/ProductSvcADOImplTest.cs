@@ -84,13 +84,13 @@ namespace TestServices
             product.UnitPrice = 30;
             product.CategoryID = 1;
             product.Description = "Canned Milk";
-            product.SupplierCode = "SD-100";
+            product.SupplierCode = "MT-100";
             //-------------
 
             try
             {
-                IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-               // productSvc.AddProduct(product);//adds product
+                //IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
+              // productSvc.AddProduct(product);//adds product
          
             }
             catch (Exception e)
@@ -115,8 +115,8 @@ namespace TestServices
             //Add supplier for product to list
             try
             {
-                IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-              //  product = productSvc.SearchProduct("MLR-100");//adds product
+              //  IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
+             //  product = productSvc.SearchProduct("MLR-100");//adds product
               
             }
             catch (Exception e)
@@ -127,12 +127,32 @@ namespace TestServices
             
         }
 
+        [TestMethod()]
+        public void RemoveProductTest()
+        {
+            Factory factory = Factory.GetInstance();
+            Product product = new Product();
+
+            //Add supplier for product to list
+            try
+            {
+              //  IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
+             // productSvc.RemoveProduct("MLR-100");//adds product
+
+            }
+            catch (Exception e)
+            {
+
+                Assert.Fail(e.ToString());//force fail of test
+            }
+
+        }
+
         /// <summary>
         ///A test for UpdateProduct
         ///</summary>
        
-        [TestMethod()]
-       
+        [TestMethod()]       
         public void UpdateProductTest()
         {
             Factory factory = Factory.GetInstance();
@@ -141,7 +161,7 @@ namespace TestServices
             Product product = new Product();
             product.ProductID = "MLR-100";
             product.ProductName = "Malta";
-            product.UnitID = 2;
+            product.UnitID = 1;
             product.QuantityReceived = 12;
             product.UnitPrice = 30;
             product.CategoryID = 1;
@@ -153,8 +173,8 @@ namespace TestServices
             //Add supplier for product to list
             try
             {
-                IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-              // productSvc.UpdateProduct(product);//adds product
+               // IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
+               // productSvc.UpdateProduct(product);//adds product
 
             }
             catch (Exception e)

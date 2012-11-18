@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b55f2d4d-fdcf-410b-81bf-f35f117f931e" name="Administrator@IT-41C8711BE33B 2012-11-17 21:15:44" runUser="IT-41C8711BE33B\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e96b331a-14e7-443c-a343-adc2a1a24a0b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_IT-41C8711BE33B 2012-11-17 21_15_44">
+      <DeploymentItem filename="C:\GroceryApp\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\GroceryApp\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\GroceryApp\GroceryApp\bin\GroceryApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-17T21:15:44.9522500+02:00" queuing="2012-11-17T21:15:44.9835000+02:00" start="2012-11-17T21:15:45.0616250+02:00" finish="2012-11-17T21:15:47.0303750+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SearchSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="bf017ad6-4f60-c2c3-891a-71955203f803">
+      <Execution id="7715ce47-84ec-4036-bb39-9d925577be99" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchSupplierTest" />
+    </UnitTest>
+    <UnitTest name="AddProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa">
+      <Execution id="fc61e3a8-68a9-4b41-9d83-4edd3655c989" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddProductTest" />
+    </UnitTest>
+    <OrderedTest name="BusinessTestSuite" storage="c:\groceryapp\businesstest\businesstestsuite.orderedtest" id="8f19a129-8be8-4c1e-bc73-167c517fc37e">
+      <Execution id="54d3517a-8811-4530-91e6-a4522eaf640d" />
+      <TestLinks>
+        <TestLink id="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" name="AddSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="bf017ad6-4f60-c2c3-891a-71955203f803" name="SearchSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="c190ac50-fd1e-c1ad-24e1-3c13826758a2" name="UpdateSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="a4cff782-8c19-6d5d-f4c8-d1ae28419562" name="RemoveSupplierTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" name="AddProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" name="SearchProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="6143045e-d7b1-c3cf-6431-871ca4cbe173" name="UpdateProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" name="RemoveProductTest" storage="bin\debug\businesstest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="AddSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c">
+      <Execution id="d0b87bc5-5bcd-40a0-9584-e59892bb2d8d" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddSupplierTest" />
+    </UnitTest>
+    <UnitTest name="UpdateSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="c190ac50-fd1e-c1ad-24e1-3c13826758a2">
+      <Execution id="208bb447-4ce4-4e9e-bc39-3bce5d1ef058" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateSupplierTest" />
+    </UnitTest>
+    <UnitTest name="RemoveSupplierTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="a4cff782-8c19-6d5d-f4c8-d1ae28419562">
+      <Execution id="63d2f9c1-21ac-4d1a-8fbd-25c4dae06bdf" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.SupplierMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveSupplierTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="6143045e-d7b1-c3cf-6431-871ca4cbe173">
+      <Execution id="8361f46c-f33f-43a2-9741-02d6fce55c62" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateProductTest" />
+    </UnitTest>
+    <UnitTest name="SearchProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01">
+      <Execution id="ac36b0a5-f3c8-46d0-9a7c-0c31ee0686f5" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchProductTest" />
+    </UnitTest>
+    <UnitTest name="RemoveProductTest" storage="c:\groceryapp\businesstest\bin\debug\businesstest.dll" id="11468ab7-0a0d-5f63-ec65-4bfd24d50c15">
+      <Execution id="ff13fdfa-5990-4b8b-8ef6-421d6239bed1" />
+      <TestMethod codeBase="C:/GroceryApp/BusinessTest/bin/Debug/BusinessTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductMgrTest, BusinessTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveProductTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8f19a129-8be8-4c1e-bc73-167c517fc37e" executionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" executionId="45acfa5c-7f2c-4383-9924-47bc99ba6384" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="bf017ad6-4f60-c2c3-891a-71955203f803" executionId="2823f672-b2f5-4da7-a6c2-cfce36ca5a99" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" executionId="7d187460-1538-409c-82ad-ac5aefdfb17e" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" executionId="7b0a05ad-9b37-4591-962f-e886606d18e7" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" executionId="c0b37427-d4fb-4a9d-b4db-5ac8ecc96686" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" executionId="80a74048-4351-449e-b45b-6957da98429b" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" executionId="2ccc401f-8960-462b-a1f4-406a8c340f5e" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" executionId="fc138e40-df37-413d-8b0b-84608c126142" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <TestResultAggregation executionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="8f19a129-8be8-4c1e-bc73-167c517fc37e" testName="BusinessTestSuite" computerName="IT-41C8711BE33B" duration="00:00:01.5581960" startTime="2012-11-17T21:15:45.0460000+02:00" endTime="2012-11-17T21:15:46.6553750+02:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54d3517a-8811-4530-91e6-a4522eaf640d">
+      <Counters error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="45acfa5c-7f2c-4383-9924-47bc99ba6384" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="5cc27fd9-8ed9-8a57-cf1d-36e5e2bb132c" testName="AddSupplierTest" computerName="IT-41C8711BE33B" duration="00:00:00.0892023" startTime="2012-11-17T21:15:45.1085000+02:00" endTime="2012-11-17T21:15:46.6553750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45acfa5c-7f2c-4383-9924-47bc99ba6384">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.Fail failed. GroceryApp.Models.Services.Exceptions.SupplierMgrException: Error Loading Service: Value cannot be null.
+Parameter name: typeName
+   at GroceryApp.Models.Business.SupplierMgr.AddSupplier(Supplier supplier) in C:\GroceryApp\GroceryApp\Models\Business\SupplierMgr.cs:line 23
+   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 85</Message>
+              <StackTrace>   at BusinessTest.SupplierMgrTest.AddSupplierTest() in C:\GroceryApp\BusinessTest\SupplierMgrTest.cs:line 89
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <TestResult executionId="2823f672-b2f5-4da7-a6c2-cfce36ca5a99" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="bf017ad6-4f60-c2c3-891a-71955203f803" testName="SearchSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2823f672-b2f5-4da7-a6c2-cfce36ca5a99" />
+        <TestResult executionId="7d187460-1538-409c-82ad-ac5aefdfb17e" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="c190ac50-fd1e-c1ad-24e1-3c13826758a2" testName="UpdateSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d187460-1538-409c-82ad-ac5aefdfb17e" />
+        <TestResult executionId="7b0a05ad-9b37-4591-962f-e886606d18e7" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="a4cff782-8c19-6d5d-f4c8-d1ae28419562" testName="RemoveSupplierTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b0a05ad-9b37-4591-962f-e886606d18e7" />
+        <TestResult executionId="c0b37427-d4fb-4a9d-b4db-5ac8ecc96686" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="6ff62ea5-d0a5-9905-38ba-7c96f4e3b4fa" testName="AddProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0b37427-d4fb-4a9d-b4db-5ac8ecc96686" />
+        <TestResult executionId="80a74048-4351-449e-b45b-6957da98429b" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="3c0a04bd-ddc1-312c-eda1-0ed41a4b3b01" testName="SearchProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80a74048-4351-449e-b45b-6957da98429b" />
+        <TestResult executionId="2ccc401f-8960-462b-a1f4-406a8c340f5e" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="6143045e-d7b1-c3cf-6431-871ca4cbe173" testName="UpdateProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ccc401f-8960-462b-a1f4-406a8c340f5e" />
+        <TestResult executionId="fc138e40-df37-413d-8b0b-84608c126142" parentExecutionId="54d3517a-8811-4530-91e6-a4522eaf640d" testId="11468ab7-0a0d-5f63-ec65-4bfd24d50c15" testName="RemoveProductTest" computerName="IT-41C8711BE33B" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc138e40-df37-413d-8b0b-84608c126142" />
+      </InnerResults>
+    </TestResultAggregation>
+  </Results>
+</TestRun>

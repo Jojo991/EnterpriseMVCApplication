@@ -1,3 +1,5 @@
+C:\GroceryApp\BusinessTest\obj\Debug\ResolveAssemblyReference.cache
+C:\GroceryApp\BusinessTest\bin\Debug\BusinessTest.dll.config
 C:\GroceryApp\BusinessTest\bin\Debug\BusinessTest.dll
 C:\GroceryApp\BusinessTest\bin\Debug\BusinessTest.pdb
 C:\GroceryApp\BusinessTest\bin\Debug\EntityFramework.dll
@@ -5,7 +7,6 @@ C:\GroceryApp\BusinessTest\bin\Debug\GroceryApp.dll
 C:\GroceryApp\BusinessTest\bin\Debug\Telerik.Web.Mvc.dll
 C:\GroceryApp\BusinessTest\bin\Debug\GroceryApp.pdb
 C:\GroceryApp\BusinessTest\bin\Debug\EntityFramework.xml
-C:\GroceryApp\BusinessTest\obj\Debug\ResolveAssemblyReference.cache
 C:\GroceryApp\BusinessTest\obj\Debug\BusinessTest.dll
 C:\GroceryApp\BusinessTest\obj\Debug\BusinessTest.pdb
-C:\GroceryApp\BusinessTest\bin\Debug\BusinessTest.dll.config
+C:\GroceryApp\BusinessTest\bin\Debug\BusinessTestSuite.orderedtest

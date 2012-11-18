@@ -54,6 +54,15 @@ namespace GroceryApp.Models.Services
             db.SaveChanges();         
         }
 
+        //service for Removing product information
+        public void RemoveProduct(string productCode)
+        {
+            Product product = db.Products.Find(productCode);
+            db.Products.Remove(product);
+            db.SaveChanges();
+
+        }//end of method 
+
 
      
     }

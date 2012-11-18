@@ -111,9 +111,10 @@ namespace GroceryApp.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(string id)
         {            
-            Product product = db.Products.Find(id);
-            db.Products.Remove(product);
-            db.SaveChanges();
+           // Product product = db.Products.Find(id);
+           // db.Products.Remove(product);
+           // db.SaveChanges();
+            ProdMgr.RemoveProduct(id);
             return RedirectToAction("Index");
         }
 

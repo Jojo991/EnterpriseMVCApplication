@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GroceryApp.Models.Domain
 {
+    /**domain Object that represents a parish**/
     public class Parish
     {
         public int ParishID { get; set; }

@@ -11,7 +11,7 @@ namespace GroceryApp.Models.Services.Exceptions
     * Thrown when a errors occurs when updating
      * Inserting or deleting a record
     * */
-    class DBProcessingException: Exception
+    public class DBProcessingException: Exception
     {
         public DBProcessingException(String s)
             : base(s)

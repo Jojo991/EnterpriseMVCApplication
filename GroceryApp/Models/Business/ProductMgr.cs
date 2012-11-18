@@ -83,6 +83,27 @@ namespace GroceryApp.Models.Business
                 throw new ProductMgrException(e.Message);
             }           
         }
+
+
+
+
+        public void RemoveProduct(string productCode)
+        {
+
+            try
+            {
+                IProductSvc productSvc = (IProductSvc)GetService(typeof(IProductSvc).Name);
+                productSvc.RemoveProduct(productCode);
+            }
+            catch (ServiceLoadException e)
+            {
+                throw new ProductMgrException(e.Message);
+            }
+            catch (DBProcessingException e)
+            {
+                throw new ProductMgrException(e.Message);
+            }
+        }
     }
 
 
