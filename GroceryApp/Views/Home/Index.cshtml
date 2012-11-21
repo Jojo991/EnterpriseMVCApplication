@@ -7,9 +7,14 @@
 <div id="title">
                 <h1>Sharon's Grocery Store</h1>
              <strong> Number of Visits : @HttpContext.Current.Application["Visits"] </strong> |
-             <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong>
+             <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong> |  
+           
                 
             </div>
+
+             
+                @Html.Partial("_LogOnPartial")
+            
 
  <div id="menucontainer">
 

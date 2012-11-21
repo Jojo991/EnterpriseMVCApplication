@@ -41,6 +41,7 @@ namespace GroceryApp.Controllers
             {
                 if (MembershipService.ValidateUser(model.UserName, model.Password))
                 {
+
                     FormsService.SignIn(model.UserName, model.RememberMe);
                     if (Url.IsLocalUrl(returnUrl))
                     {
@@ -53,7 +54,7 @@ namespace GroceryApp.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                    ModelState.AddModelError("", "We are sorry, but the username and password entered is invalid.");
                 }
             }
 
@@ -92,6 +93,7 @@ namespace GroceryApp.Controllers
 
                 if (createStatus == MembershipCreateStatus.Success)
                 {
+                    Roles.AddUserToRole(model.UserName, "visitor");
                     FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
                     return RedirectToAction("Index", "Home");
                 }

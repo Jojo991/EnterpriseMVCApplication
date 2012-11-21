@@ -82,7 +82,7 @@ namespace BusinessTest
 
             try
             {
-                //target.AddSupplier(supplier);
+                target.AddSupplier(supplier);
             }
             catch (SupplierMgrException e)
             {
@@ -101,7 +101,7 @@ namespace BusinessTest
             
             try
             {
-           // target.RemoveSupplier(supplierCode);
+            target.RemoveSupplier(supplierCode);
             }
             catch (SupplierMgrException e)
             {
@@ -120,7 +120,7 @@ namespace BusinessTest
 
             try
             {
-             //   target.SearchSupplier(supplierCode);
+                target.SearchSupplier(supplierCode);
             }
             catch (SupplierMgrException e)
             {
@@ -143,7 +143,7 @@ namespace BusinessTest
 
             try
             {
-               // target.UpdateSupplier(supplier);
+                target.UpdateSupplier(supplier);
             }
             catch (SupplierMgrException e)
             {

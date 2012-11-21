@@ -83,8 +83,8 @@ namespace TestServices
 
             try
             {
-               // ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
-               // supplierSvc.AddSupplier(supplier);//adds product
+                ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
+                supplierSvc.AddSupplier(supplier);//adds product
 
             }
             catch (Exception e)
@@ -104,8 +104,8 @@ namespace TestServices
             string supplierCode = "RIB-100"; // TODO: Initialize to an appropriate value
             try
             {
-            //    ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
-              //  supplierSvc.RemoveSupplier(supplierCode);//adds product
+                ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
+                supplierSvc.RemoveSupplier(supplierCode);//adds product
 
             }
             catch (Exception e)
@@ -126,8 +126,8 @@ namespace TestServices
             
             try
             {
-              //  ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
-              //  supplierSvc.SearchSupplier(supplierCode);//adds product
+                ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
+                supplierSvc.SearchSupplier(supplierCode);//adds product
 
             }
             catch (Exception e)
@@ -152,8 +152,8 @@ namespace TestServices
 
             try
             {
-              //  ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
-               // supplierSvc.UpdateSupplier(supplier);//adds product
+                ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
+                supplierSvc.UpdateSupplier(supplier);//adds product
 
             }
             catch (Exception e)

@@ -18,7 +18,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Supplier/
-
+        [Authorize(Roles = "Admin")]
         public ViewResult Index()
         {
             var suppliers = db.Suppliers.Include(s => s.Parish);
@@ -27,7 +27,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Supplier/Details/5
-
+        [Authorize(Roles = "Admin")]
         public ViewResult Details(string id)
         {
             Supplier supplier = SuppMgr.SearchSupplier(id);
@@ -37,7 +37,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Supplier/Create
-
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.ParishID = new SelectList(db.Parish, "ParishID", "name");
@@ -46,7 +46,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Supplier/Create
-
+       [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Create(Supplier supplier)
         {
@@ -64,7 +64,7 @@ namespace GroceryApp.Controllers
         
         //
         // GET: /Supplier/Edit/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(string id)
         {
            // Supplier supplier = db.Suppliers.Find(id);
@@ -75,7 +75,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Supplier/Edit/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Edit(Supplier supplier)
         {
@@ -92,7 +92,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Supplier/Delete/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(string id)
         {
             Supplier supplier = db.Suppliers.Find(id);
@@ -101,7 +101,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Supplier/Delete/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(string id)
         {            

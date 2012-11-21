@@ -175,6 +175,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Business\Manager.cs" />
     <Compile Include="Models\Business\ProductMgr.cs" />
@@ -597,6 +598,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="CodeTemplates\" />
+    <Folder Include="Views\Restricted\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -803,6 +805,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\_LogOnPartial.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

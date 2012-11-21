@@ -17,7 +17,7 @@ namespace GroceryApp.Controllers
         private ProductMgr ProdMgr = new ProductMgr();
         //
         // GET: /Product/
-
+         [Authorize(Roles = "Admin")]
         public ViewResult Index()
         {
             var products = db.Products.Include(p => p.Category).Include(p => p.Supplier).Include(p => p.Unit);
@@ -26,7 +26,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Product/Details/5
-
+         [Authorize(Roles = "Admin")]
         public ViewResult Details(string id)
         {
             Product product = db.Products.Find(id);
@@ -35,7 +35,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Product/Create
-
+         [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "name");
@@ -46,7 +46,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Product/Create
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Create(Product product)
         {
@@ -66,7 +66,7 @@ namespace GroceryApp.Controllers
         
         //
         // GET: /Product/Edit/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(string id)
         {
            // Product product = db.Products.Find(id);
@@ -79,7 +79,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Product/Edit/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Edit(Product product)
         {
@@ -98,7 +98,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Product/Delete/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(string id)
         {
             Product product = db.Products.Find(id);
@@ -107,7 +107,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Product/Delete/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(string id)
         {            

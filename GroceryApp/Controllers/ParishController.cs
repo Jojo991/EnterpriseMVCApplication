@@ -16,7 +16,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Parish/
-
+        [Authorize(Roles = "Admin")]
         public ViewResult Index()
         {
             return View(db.Parish.ToList());
@@ -24,7 +24,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Parish/Details/5
-
+        [Authorize(Roles = "Admin")]
         public ViewResult Details(int id)
         {
             Parish parish = db.Parish.Find(id);
@@ -33,7 +33,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Parish/Create
-
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -41,7 +41,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Parish/Create
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Create(Parish parish)
         {
@@ -57,7 +57,7 @@ namespace GroceryApp.Controllers
         
         //
         // GET: /Parish/Edit/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
         {
             Parish parish = db.Parish.Find(id);
@@ -66,7 +66,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Parish/Edit/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Edit(Parish parish)
         {
@@ -81,7 +81,7 @@ namespace GroceryApp.Controllers
 
         //
         // GET: /Parish/Delete/5
- 
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             Parish parish = db.Parish.Find(id);
@@ -90,7 +90,7 @@ namespace GroceryApp.Controllers
 
         //
         // POST: /Parish/Delete/5
-
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {            
