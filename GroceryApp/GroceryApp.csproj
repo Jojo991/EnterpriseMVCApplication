@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL " />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -185,6 +186,7 @@
     <Compile Include="Models\Domain\Product.cs" />
     <Compile Include="Models\Domain\Supplier.cs" />
     <Compile Include="Models\Domain\Unit.cs" />
+    <Compile Include="Models\Services\DropCreateDatabaseTables.cs" />
     <Compile Include="Models\Services\Exceptions\DBProcessingException.cs" />
     <Compile Include="Models\Services\Exceptions\DuplicateRecordException.cs" />
     <Compile Include="Models\Services\Exceptions\ProductMgrException.cs" />

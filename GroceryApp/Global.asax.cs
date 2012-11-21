@@ -42,10 +42,10 @@ namespace GroceryApp
             //-------------------------           
 
             AreaRegistration.RegisterAllAreas();
-
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
+            Database.SetInitializer(new DropCreateDatabaseTables());
             
         }
 
