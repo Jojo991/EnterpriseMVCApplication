@@ -41,11 +41,11 @@ namespace GroceryApp
             Application.UnLock();
             //-------------------------           
 
-            AreaRegistration.RegisterAllAreas();
-            RegisterGlobalFilters(GlobalFilters.Filters);
-            RegisterRoutes(RouteTable.Routes);
+            //AreaRegistration.RegisterAllAreas();
+            //RegisterGlobalFilters(GlobalFilters.Filters);
+            //RegisterRoutes(RouteTable.Routes);
 
-            Database.SetInitializer(new DropCreateDatabaseTables());
+           // Database.SetInitializer(new DropCreateDatabaseTables());
             
         }
 
