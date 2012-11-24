@@ -15,7 +15,8 @@ namespace GroceryApp.Models.Services
         public GroceryDbContext()
          //  :// base("name=GroceryDbContext")
         {
-            Database.SetInitializer(new DropCreateDatabaseTables());
+            //Database.SetInitializer(new DropCreateDatabaseTables());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<DbContext>());
         }
 
         public DbSet<Product> Products { get; set; }
