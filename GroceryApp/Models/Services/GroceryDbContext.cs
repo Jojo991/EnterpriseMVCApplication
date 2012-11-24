@@ -12,10 +12,11 @@ namespace GroceryApp.Models.Services
 {
     public class GroceryDbContext : DbContext
     {
-        //public GroceryDbContext()
-        //    : base("name=GroceryDbContext")
-        //{
-        //}
+        public GroceryDbContext()
+         //  :// base("name=GroceryDbContext")
+        {
+            Database.SetInitializer(new DropCreateDatabaseTables());
+        }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }

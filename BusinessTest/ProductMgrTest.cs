@@ -4,6 +4,10 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using GroceryApp.Models.Domain;
 using GroceryApp.Models.Services.Exceptions;
+using System.Web.Mvc;
+using System.Web.Routing;
+using System.Data.Entity;
+using GroceryApp.Models.Services;
 
 namespace BusinessTest
 {
@@ -16,7 +20,14 @@ namespace BusinessTest
     [TestClass()]
     public class ProductMgrTest
     {
+        public void dbSetUp()
+        {
+          //AreaRegistration.RegisterAllAreas();
+          //  RegisterGlobalFilters(GlobalFilters.Filters);
+          //  RegisterRoutes(RouteTable.Routes);
 
+          //  Database.SetInitializer(new DropCreateDatabaseTables());
+        }
 
         private TestContext testContextInstance;
 
@@ -74,6 +85,7 @@ namespace BusinessTest
         [TestMethod()]      
         public void AddProductTest()
         {
+          //  dbSetUp();
             ProductMgr target = new ProductMgr(); // TODO: Initialize to an appropriate value
          
             // Target product-------------
