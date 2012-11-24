@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9f4fba2c-8250-4d3e-9456-a2077511dfe6" name="Administrator@IT-41C8711BE33B 2012-11-25 00:23:54" runUser="IT-41C8711BE33B\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e96b331a-14e7-443c-a343-adc2a1a24a0b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_IT-41C8711BE33B 2012-11-25 00_23_54">
+      <DeploymentItem filename="C:\GroceryApp\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\GroceryApp\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\GroceryApp\GroceryApp\bin\GroceryApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-25T00:23:54.5312500+02:00" queuing="2012-11-25T00:23:54.7656250+02:00" start="2012-11-25T00:23:54.8906250+02:00" finish="2012-11-25T00:24:06.7500000+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef">
+      <Execution id="3c2cc05a-aac5-496d-bb58-6f267bf730cb" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddProductTest" />
+    </UnitTest>
+    <UnitTest name="UpdateProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="99ca40cb-11c4-6932-0028-af3aa6b398f0">
+      <Execution id="fd29b191-ada6-45cc-b273-42058b346e8c" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateProductTest" />
+    </UnitTest>
+    <UnitTest name="ZZRemoveProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="92f865d3-4b42-1e4b-b957-57bc81ee4707">
+      <Execution id="5a67bdcf-0af6-4474-abd3-f17274aa3bab" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZZRemoveProductTest" />
+    </UnitTest>
+    <UnitTest name="SearchProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="f4d13ba0-ab3c-eabd-c9c2-50f97e57cf2b">
+      <Execution id="bf4bbddc-bcf3-47a5-a98d-bb072a9474d2" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestServices.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchProductTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef" executionId="3c2cc05a-aac5-496d-bb58-6f267bf730cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92f865d3-4b42-1e4b-b957-57bc81ee4707" executionId="5a67bdcf-0af6-4474-abd3-f17274aa3bab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99ca40cb-11c4-6932-0028-af3aa6b398f0" executionId="fd29b191-ada6-45cc-b273-42058b346e8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4d13ba0-ab3c-eabd-c9c2-50f97e57cf2b" executionId="bf4bbddc-bcf3-47a5-a98d-bb072a9474d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3c2cc05a-aac5-496d-bb58-6f267bf730cb" testId="25fae7e3-8ee5-ae6f-bfa6-7293d85a41ef" testName="AddProductTest" computerName="IT-41C8711BE33B" duration="00:00:07.2687243" startTime="2012-11-25T00:23:55.2500000+02:00" endTime="2012-11-25T00:24:04.6718750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c2cc05a-aac5-496d-bb58-6f267bf730cb">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a67bdcf-0af6-4474-abd3-f17274aa3bab" testId="92f865d3-4b42-1e4b-b957-57bc81ee4707" testName="ZZRemoveProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.7970669" startTime="2012-11-25T00:24:04.7031250+02:00" endTime="2012-11-25T00:24:05.5156250+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a67bdcf-0af6-4474-abd3-f17274aa3bab">
+    </UnitTestResult>
+    <UnitTestResult executionId="fd29b191-ada6-45cc-b273-42058b346e8c" testId="99ca40cb-11c4-6932-0028-af3aa6b398f0" testName="UpdateProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.6099040" startTime="2012-11-25T00:24:05.5312500+02:00" endTime="2012-11-25T00:24:06.1562500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd29b191-ada6-45cc-b273-42058b346e8c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---&gt; System.Data.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at GroceryApp.Models.Services.ProductSvcADOImpl.UpdateProduct(Product product) in C:\GroceryApp\GroceryApp\Models\Services\ProductSvcADOImpl.cs:line 54
+   at TestServices.ProductSvcADOImplTest.UpdateProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 182</Message>
+          <StackTrace>   at TestServices.ProductSvcADOImplTest.UpdateProductTest() in C:\GroceryApp\TestServices\ProductSvcADOImplTest.cs:line 187
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf4bbddc-bcf3-47a5-a98d-bb072a9474d2" testId="f4d13ba0-ab3c-eabd-c9c2-50f97e57cf2b" testName="SearchProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.1837160" startTime="2012-11-25T00:24:06.1875000+02:00" endTime="2012-11-25T00:24:06.3750000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf4bbddc-bcf3-47a5-a98d-bb072a9474d2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

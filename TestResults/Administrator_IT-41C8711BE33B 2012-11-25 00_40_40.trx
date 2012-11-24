@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ffe8faf6-3972-44e5-aa27-355cc3508268" name="Administrator@IT-41C8711BE33B 2012-11-25 00:40:40" runUser="IT-41C8711BE33B\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e96b331a-14e7-443c-a343-adc2a1a24a0b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_IT-41C8711BE33B 2012-11-25 00_40_40">
+      <DeploymentItem filename="C:\GroceryApp\packages\TelerikMvcExtensions.2011.1.315\lib\net40\Telerik.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\GroceryApp\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="C:\GroceryApp\GroceryApp\bin\GroceryApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-25T00:40:40.7187500+02:00" queuing="2012-11-25T00:40:40.8125000+02:00" start="2012-11-25T00:40:40.9062500+02:00" finish="2012-11-25T00:40:50.9843750+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BUpdateProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="c2d95577-3b9b-6749-df77-a133307e1ab5">
+      <Execution id="3fa34b41-b902-468c-a3b8-e6fe384c7833" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BUpdateProductTest" />
+    </UnitTest>
+    <UnitTest name="BRemoveProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="1c88a0a1-1693-27a6-af64-e3596b434c21">
+      <Execution id="fe2874bd-ebf1-422c-b3c8-311f0548c86c" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BRemoveProductTest" />
+    </UnitTest>
+    <UnitTest name="BSearchProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="ec1d99f7-40b4-afb8-8fc4-87a4bcb72f87">
+      <Execution id="12e4a305-7848-4758-aa5d-4546c1ae144a" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BSearchProductTest" />
+    </UnitTest>
+    <UnitTest name="AddProductTest" storage="c:\groceryapp\testservices\bin\debug\testservices.dll" id="6445d75f-7f87-bb38-722c-3a451b06ed14">
+      <Execution id="e035a71b-2ec6-4aae-8234-89fe814137aa" />
+      <TestMethod codeBase="C:/GroceryApp/TestServices/bin/Debug/TestServices.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="BusinessTest.ProductSvcADOImplTest, TestServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddProductTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1c88a0a1-1693-27a6-af64-e3596b434c21" executionId="fe2874bd-ebf1-422c-b3c8-311f0548c86c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6445d75f-7f87-bb38-722c-3a451b06ed14" executionId="e035a71b-2ec6-4aae-8234-89fe814137aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2d95577-3b9b-6749-df77-a133307e1ab5" executionId="3fa34b41-b902-468c-a3b8-e6fe384c7833" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec1d99f7-40b4-afb8-8fc4-87a4bcb72f87" executionId="12e4a305-7848-4758-aa5d-4546c1ae144a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fe2874bd-ebf1-422c-b3c8-311f0548c86c" testId="1c88a0a1-1693-27a6-af64-e3596b434c21" testName="BRemoveProductTest" computerName="IT-41C8711BE33B" duration="00:00:06.2972760" startTime="2012-11-25T00:40:41.1718750+02:00" endTime="2012-11-25T00:40:49.2031250+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe2874bd-ebf1-422c-b3c8-311f0548c86c">
+    </UnitTestResult>
+    <UnitTestResult executionId="e035a71b-2ec6-4aae-8234-89fe814137aa" testId="6445d75f-7f87-bb38-722c-3a451b06ed14" testName="AddProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.4671146" startTime="2012-11-25T00:40:49.2500000+02:00" endTime="2012-11-25T00:40:49.7968750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e035a71b-2ec6-4aae-8234-89fe814137aa">
+    </UnitTestResult>
+    <UnitTestResult executionId="3fa34b41-b902-468c-a3b8-e6fe384c7833" testId="c2d95577-3b9b-6749-df77-a133307e1ab5" testName="BUpdateProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.4453035" startTime="2012-11-25T00:40:49.8125000+02:00" endTime="2012-11-25T00:40:50.2812500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fa34b41-b902-468c-a3b8-e6fe384c7833">
+    </UnitTestResult>
+    <UnitTestResult executionId="12e4a305-7848-4758-aa5d-4546c1ae144a" testId="ec1d99f7-40b4-afb8-8fc4-87a4bcb72f87" testName="BSearchProductTest" computerName="IT-41C8711BE33B" duration="00:00:00.1581779" startTime="2012-11-25T00:40:50.2968750+02:00" endTime="2012-11-25T00:40:50.4843750+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12e4a305-7848-4758-aa5d-4546c1ae144a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

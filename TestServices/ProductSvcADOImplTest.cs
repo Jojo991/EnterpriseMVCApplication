@@ -4,7 +4,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using GroceryApp.Models.Domain;
 
-namespace TestServices
+namespace BusinessTest
 {
     
     
@@ -64,13 +64,12 @@ namespace TestServices
         //}
         //
         #endregion
-
-
         /// <summary>
-        ///A test for AddProduct
+        ///A test for AddProduct 
         ///</summary>
-       
-        [TestMethod()]        
+
+        [TestMethod()]
+
         public void AddProductTest()
         {
             Factory factory = Factory.GetInstance();
@@ -90,45 +89,48 @@ namespace TestServices
             try
             {
                 IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-               productSvc.AddProduct(product);//adds product
-         
+                productSvc.AddProduct(product);//adds product
+
             }
             catch (Exception e)
             {
-               
+
                 Assert.Fail(e.ToString());//force fail of test
             }
 
-          
+
+        }
+
+
+        [TestMethod()]
+
+        public void BRemoveProductTest()
+        {
+            Factory factory = Factory.GetInstance();
+            Product product = new Product();
+
+            //Add supplier for product to list
+            try
+            {
+                IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
+                productSvc.RemoveProduct("MLR-100");//adds product
+
+            }
+            catch (Exception e)
+            {
+
+                Assert.Fail(e.ToString());//force fail of test
+            }
+
         }
 
         /// <summary>
         ///A test for SearchProduct
         ///</summary>
-       
-        [TestMethod()]       
-        public void SearchProductTest()
-        {
-            Factory factory = Factory.GetInstance();
-            Product product = new Product();
-
-            //Add supplier for product to list
-            try
-            {
-                IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-               product = productSvc.SearchProduct("MLR-100");//adds product
-              
-            }
-            catch (Exception e)
-            {
-               
-                Assert.Fail(e.ToString());//force fail of test
-            }
-            
-        }
 
         [TestMethod()]
-        public void RemoveProductTest()
+
+        public void BSearchProductTest()
         {
             Factory factory = Factory.GetInstance();
             Product product = new Product();
@@ -137,7 +139,7 @@ namespace TestServices
             try
             {
                 IProductSvc productSvc = (IProductSvc)factory.GetService(typeof(IProductSvc).Name);
-              productSvc.RemoveProduct("MLR-100");//adds product
+                product = productSvc.SearchProduct("MLR-100");//adds product
 
             }
             catch (Exception e)
@@ -151,9 +153,10 @@ namespace TestServices
         /// <summary>
         ///A test for UpdateProduct
         ///</summary>
-       
-        [TestMethod()]       
-        public void UpdateProductTest()
+
+        [TestMethod()]
+
+        public void BUpdateProductTest()
         {
             Factory factory = Factory.GetInstance();
 
@@ -181,7 +184,7 @@ namespace TestServices
             {
                 Assert.Fail(e.ToString());//force fail of test
             }
-           
+
         }
     }
 }
