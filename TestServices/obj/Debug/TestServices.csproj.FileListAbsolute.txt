@@ -1,4 +1,4 @@
-C:\GroceryApp\TestServices\obj\Debug\ResolveAssemblyReference.cache
+C:\GroceryApp\TestServices\bin\Debug\ServicesTestSuite.orderedtest
 C:\GroceryApp\TestServices\bin\Debug\TestServices.dll.config
 C:\GroceryApp\TestServices\bin\Debug\TestServices.dll
 C:\GroceryApp\TestServices\bin\Debug\TestServices.pdb
@@ -7,6 +7,6 @@ C:\GroceryApp\TestServices\bin\Debug\GroceryApp.dll
 C:\GroceryApp\TestServices\bin\Debug\Telerik.Web.Mvc.dll
 C:\GroceryApp\TestServices\bin\Debug\GroceryApp.pdb
 C:\GroceryApp\TestServices\bin\Debug\EntityFramework.xml
+C:\GroceryApp\TestServices\obj\Debug\ResolveAssemblyReference.cache
 C:\GroceryApp\TestServices\obj\Debug\TestServices.dll
 C:\GroceryApp\TestServices\obj\Debug\TestServices.pdb
-C:\GroceryApp\TestServices\bin\Debug\ServicesTestSuite.orderedtest
