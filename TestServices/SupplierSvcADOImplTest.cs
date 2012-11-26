@@ -76,7 +76,7 @@ namespace TestServices
             Factory factory = Factory.GetInstance();
             Supplier supplier = new Supplier(); // TODO: Initialize to an appropriate value
 
-            supplier.SupplierCode = "RIB-100";
+            supplier.SupplierCode = "RIBI-100";
             supplier.SupplierName = "Richels's Juices";
             supplier.StreetAddress = "22 Hope Road Kingston";
             supplier.ParishID = 1;
@@ -101,7 +101,7 @@ namespace TestServices
         public void RemoveSupplierTest()
         {
             Factory factory = Factory.GetInstance();
-            string supplierCode = "RIB-100"; // TODO: Initialize to an appropriate value
+            string supplierCode = "RIBI-100"; // TODO: Initialize to an appropriate value
             try
             {
                 ISupplierSvc supplierSvc = (ISupplierSvc)factory.GetService(typeof(ISupplierSvc).Name);
@@ -122,7 +122,7 @@ namespace TestServices
         public void SearchSupplierTest()
         {
             Factory factory = Factory.GetInstance();
-           string supplierCode = "RIB-100"; // TODO: Initialize to an appropriate value
+            string supplierCode = "RIBI-100"; // TODO: Initialize to an appropriate value
             
             try
             {
@@ -145,7 +145,7 @@ namespace TestServices
             Factory factory = Factory.GetInstance();
             Supplier supplier = new Supplier(); // TODO: Initialize to an appropriate value
 
-            supplier.SupplierCode = "RIB-100";
+            supplier.SupplierCode = "RIBI-100";
             supplier.SupplierName = "Richels's Juices & Fruits";
             supplier.StreetAddress = "22 Hope Road Kingston";
             supplier.ParishID = 1;

@@ -1,3 +1,4 @@
+C:\GroceryApp\TestServices\bin\Release\ServicesTestSuite.orderedtest
 C:\GroceryApp\TestServices\bin\Release\TestServices.dll.config
 C:\GroceryApp\TestServices\bin\Release\TestServices.dll
 C:\GroceryApp\TestServices\bin\Release\TestServices.pdb

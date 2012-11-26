@@ -3,8 +3,33 @@
 @{
     ViewBag.Title = "Create";
 }
+<div id="title">
+                <h1>Sharon's Grocery Store</h1>
+             <strong> Number of Visits : @HttpContext.Current.Application["Visits"] </strong> |
+             <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong> |  @Html.Partial("_LogOnPartial") 
+           
+                
+            </div>
+
+             
+               
+            
+
+ <div id="menucontainer">
+
+                
+                 <strong> @Html.ActionLink("Home", "Index", "Home") </strong> |
+                 <strong> @Html.ActionLink("About", "About", "Home") </strong> |
+                 <strong> @Html.ActionLink("Products", "Index", "Product") </strong> |
+                 <strong> @Html.ActionLink("Suppliers", "Index", "Supplier")</strong> |
+                 <strong> @Html.ActionLink("Categories", "Index", "Category") </strong> |
+                 <strong>@Html.ActionLink("Parishes", "Index", "Parish") </strong> |
+                  <strong>@Html.ActionLink("Units", "Index", "Unit") </strong> |
+                    
+            </div>
 
 <h2>Create</h2>
+<strong> Hi user from: @Session["IPAddress"].ToString() , this menu is used for adding suppliers.</strong>
 
 <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
