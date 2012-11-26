@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>Sharon's Grocery Store</h1>
+             <strong> Number of Visits : @HttpContext.Current.Application["Visits"] </strong> |
+             <strong> Your IP Address is : @Session["IPAddress"].ToString() </strong>
+                
+            </div>
+
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+
+            <div id="menucontainer">
+
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Suppliers", "Index", "Supplier")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Category")</li>
+                    <li>@Html.ActionLink("Parishes", "Index", "Parish")</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="main">
+            @RenderBody()
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
