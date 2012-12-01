@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using GroceryApp.Models;
+using GroceryApp.Models.Business;
+using GroceryApp.Models.Services.Exceptions;
 
 namespace GroceryApp.Controllers
 {
@@ -37,9 +39,24 @@ namespace GroceryApp.Controllers
         [HttpPost]
         public ActionResult LogOn(LogOnModel model, string returnUrl)
         {
+            AuthenticationMgr authMgr = new AuthenticationMgr();
             if (ModelState.IsValid)
             {
-                if (MembershipService.ValidateUser(model.UserName, model.Password))
+              //  if (MembershipService.ValidateUser(model.UserName, model.Password))
+                Boolean isValid = false;
+                try
+                {
+                      isValid =   authMgr.ValidateUser(model.UserName, model.Password);
+                }
+                catch(AuthenticationException ex)
+                {
+                    ModelState.AddModelError("", "An Error occured while processing"+ex.ToString());
+                   return View(model);
+                }
+
+
+
+                if (isValid==true)
                 {
 
                     FormsService.SignIn(model.UserName, model.RememberMe);

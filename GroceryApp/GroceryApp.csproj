@@ -39,6 +39,9 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL " />
@@ -78,15 +81,19 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Business\AuthenticationMgr.cs" />
     <Compile Include="Models\Business\Manager.cs" />
     <Compile Include="Models\Business\ProductMgr.cs" />
     <Compile Include="Models\Business\SupplierMgr.cs" />
     <Compile Include="Models\Domain\Category.cs" />
+    <Compile Include="Models\Domain\Credentials.cs" />
     <Compile Include="Models\Domain\Parish.cs" />
     <Compile Include="Models\Domain\Product.cs" />
     <Compile Include="Models\Domain\Supplier.cs" />
     <Compile Include="Models\Domain\Unit.cs" />
+    <Compile Include="Models\Services\AuthenticationSvcImpl.cs" />
     <Compile Include="Models\Services\DropCreateDatabaseTables.cs" />
+    <Compile Include="Models\Services\Exceptions\AuthenticationException.cs" />
     <Compile Include="Models\Services\Exceptions\DBProcessingException.cs" />
     <Compile Include="Models\Services\Exceptions\DuplicateRecordException.cs" />
     <Compile Include="Models\Services\Exceptions\ProductMgrException.cs" />
@@ -94,6 +101,7 @@
     <Compile Include="Models\Services\Exceptions\SupplierMgrException.cs" />
     <Compile Include="Models\Services\Factory.cs" />
     <Compile Include="Models\Services\GroceryDbContext.cs" />
+    <Compile Include="Models\Services\IAuthenticationSvc.cs" />
     <Compile Include="Models\Services\IProductSvc.cs" />
     <Compile Include="Models\Services\IService.cs" />
     <Compile Include="Models\Services\ISupplierSvc.cs" />
