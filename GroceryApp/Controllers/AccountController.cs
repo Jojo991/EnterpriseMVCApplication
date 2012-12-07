@@ -10,6 +10,9 @@ using System.Web.Security;
 using GroceryApp.Models;
 using GroceryApp.Models.Business;
 using GroceryApp.Models.Services.Exceptions;
+using GroceryApp.AppharborWCFService;
+//using GroceryApp.LocalWCFAuthService;
+
 
 namespace GroceryApp.Controllers
 {
@@ -39,26 +42,13 @@ namespace GroceryApp.Controllers
         [HttpPost]
         public ActionResult LogOn(LogOnModel model, string returnUrl)
         {
-            AuthenticationMgr authMgr = new AuthenticationMgr();
+           // AuthenticationMgr authMgr = new AuthenticationMgr();
+           AuthenticationServiceClient client = new AuthenticationServiceClient();
             if (ModelState.IsValid)
             {
-              //  if (MembershipService.ValidateUser(model.UserName, model.Password))
-                Boolean isValid = false;
-                try
-                {
-                      isValid =   authMgr.ValidateUser(model.UserName, model.Password);
-                }
-                catch(AuthenticationException ex)
-                {
-                    ModelState.AddModelError("", "An Error occured while processing"+ex.ToString());
-                   return View(model);
-                }
-
-
-
-                if (isValid==true)
-                {
-
+                if (client.isValidCredentials(model.UserName, model.Password))
+              {
+                
                     FormsService.SignIn(model.UserName, model.RememberMe);
                     if (Url.IsLocalUrl(returnUrl))
                     {
