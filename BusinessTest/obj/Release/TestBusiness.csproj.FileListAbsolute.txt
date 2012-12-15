@@ -10,3 +10,4 @@ C:\GroceryApp\BusinessTest\bin\Release\EntityFramework.xml
 C:\GroceryApp\BusinessTest\obj\Release\ResolveAssemblyReference.cache
 C:\GroceryApp\BusinessTest\obj\Release\BusinessTest.dll
 C:\GroceryApp\BusinessTest\obj\Release\BusinessTest.pdb
+C:\GroceryApp\BusinessTest\bin\Release\GroceryApp.XmlSerializers.dll

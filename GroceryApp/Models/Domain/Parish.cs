@@ -10,11 +10,11 @@ namespace GroceryApp.Models.Domain
     /**domain Object that represents a parish**/
     public class Parish
     {
-        public int ParishID { get; set; }
+        public int ParishID { get; set; }//parish ID
 
         [Required]
         [Display(Name = "Parish Name")]
-        public string name { get; set; }
+        public string name { get; set; }//parish name
 
         public virtual ICollection<Supplier> Suppliers { get; set; }
     }

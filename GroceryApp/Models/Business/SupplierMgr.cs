@@ -8,8 +8,10 @@ using GroceryApp.Models.Domain;
 
 namespace GroceryApp.Models.Business
 {
+    //supplier manager class
     public class SupplierMgr : Manager
     {
+        //adds a supplier
         public void AddSupplier(Supplier supplier)
         {
 
@@ -34,7 +36,7 @@ namespace GroceryApp.Models.Business
 
 
 
-
+        //searches for a supplier via supplier code
         public Supplier SearchSupplier(string supplierCode)
         {
             Supplier supplier = new Supplier();
@@ -58,7 +60,7 @@ namespace GroceryApp.Models.Business
 
 
 
-
+        //updates a supplier
         public void UpdateSupplier(Supplier supplier)
         {
 
@@ -79,7 +81,7 @@ namespace GroceryApp.Models.Business
 
 
 
-
+        //removes a supplier
         public void RemoveSupplier(string supplierCode)
         {
 

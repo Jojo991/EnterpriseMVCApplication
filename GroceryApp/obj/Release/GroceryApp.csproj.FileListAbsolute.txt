@@ -6,3 +6,5 @@ C:\GroceryApp\GroceryApp\bin\EntityFramework.xml
 C:\GroceryApp\GroceryApp\obj\Release\ResolveAssemblyReference.cache
 C:\GroceryApp\GroceryApp\obj\Release\GroceryApp.dll
 C:\GroceryApp\GroceryApp\obj\Release\GroceryApp.pdb
+C:\GroceryApp\GroceryApp\bin\GroceryApp.XmlSerializers.dll
+C:\GroceryApp\GroceryApp\obj\Release\GroceryApp.XmlSerializers.dll

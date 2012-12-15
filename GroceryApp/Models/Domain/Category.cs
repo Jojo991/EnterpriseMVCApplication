@@ -12,11 +12,11 @@ namespace GroceryApp.Models.Domain
     public class Category
     {
         
-        public int CategoryID { get; set; }
+        public int CategoryID { get; set; }//category ID
 
         [Required]
         [Display(Name = "Category Name")]
-        public string name { get; set; }
+        public string name { get; set; }//category name
 
         public virtual ICollection<Product> Products { get; set; }
     }

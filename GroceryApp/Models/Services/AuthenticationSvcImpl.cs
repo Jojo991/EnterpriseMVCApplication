@@ -10,17 +10,18 @@ using GroceryApp.Models.Services.Exceptions;
 
 namespace GroceryApp.Models.Services
 {
+   // client socket implementation
     public class AuthenticationSvcImpl:IAuthenticationSvc
     {
-        Socket socket = null;
-        IPEndPoint ipEndPoint =null;
-        BinaryFormatter formatter = new BinaryFormatter();
-        BinaryReader reader = null;
-        NetworkStream stream = null;
-        BinaryWriter writer = null;
+        Socket socket = null;//socket object
+        IPEndPoint ipEndPoint =null;//end point object
+        BinaryFormatter formatter = new BinaryFormatter(); //formatter
+        BinaryReader reader = null; //reader
+        NetworkStream stream = null; //network stream
+        BinaryWriter writer = null; //binary writer
 
        
-        
+        //method for connecting to server
         private void ConnectToServer()
         {
             try
@@ -44,7 +45,7 @@ namespace GroceryApp.Models.Services
         }
 
        
-        
+        //send credentials across to server
         public Boolean SendCredentials(string username, string password)
         {
             ConnectToServer();
@@ -74,6 +75,7 @@ namespace GroceryApp.Models.Services
 
         }
 
+        //close connection
          public void closeClientConnection() 
          {
        

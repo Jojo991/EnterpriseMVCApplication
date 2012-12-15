@@ -10,8 +10,10 @@ using System.Web.Security;
 using GroceryApp.Models;
 using GroceryApp.Models.Business;
 using GroceryApp.Models.Services.Exceptions;
-using GroceryApp.AppharborWCFService;
-//using GroceryApp.LocalWCFAuthService;
+using GroceryApp.FiwilinkzWebservice; //(fiwilinkz in use)
+//using GroceryApp.LocalWebService; //not used
+//using GroceryApp.AppharborWCFService;  //not used
+//using GroceryApp.LocalWCFAuthService;   //not used
 
 
 namespace GroceryApp.Controllers
@@ -43,7 +45,9 @@ namespace GroceryApp.Controllers
         public ActionResult LogOn(LogOnModel model, string returnUrl)
         {
            // AuthenticationMgr authMgr = new AuthenticationMgr();
-           AuthenticationServiceClient client = new AuthenticationServiceClient();
+          // AuthenticationServiceClient client = new AuthenticationServiceClient();
+             AuthenticationService client = new AuthenticationService(); //webservice client
+            
             if (ModelState.IsValid)
             {
                 if (client.isValidCredentials(model.UserName, model.Password))

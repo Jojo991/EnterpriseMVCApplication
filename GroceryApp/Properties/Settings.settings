@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GroceryApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GroceryApp_LocalWebService_AuthenticationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/WebserviceAuthentication/AuthenticationService.asmx</Value>
+    </Setting>
+    <Setting Name="GroceryApp_FiwilinkzWebservice_AuthenticationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://msenterprise.fiwilinkz.com/msenterprise/authenticationservice.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
